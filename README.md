@@ -11,11 +11,11 @@
 
 
 #### Build tools & versions used
-compileSdk 33
-targetSdk 33
-compose_version = '1.3.1'
-'androidx.core:core-ktx:1.9.0'
-'com.google.dagger:hilt-android:2.44'
+* compileSdk 33
+* targetSdk 33
+* compose_version = '1.3.1'
+* 'androidx.core:core-ktx:1.9.0'
+* 'com.google.dagger:hilt-android:2.44'
 
 
 #### Steps to run the app

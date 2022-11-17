@@ -6,4 +6,10 @@ interface EmployeeApi {
 
     @GET("sq-mobile-interview/employees.json")
     suspend fun getEmployeesData(): EmployeeResponse
+
+    @GET("sq-mobile-interview/employees_malformed.json")
+    suspend fun getEmployeesDataMalformed(): EmployeeResponse
+
+    @GET("sq-mobile-interview/employees_empty.json")
+    suspend fun getEmployeesDataEmpty(): EmployeeResponse
 }

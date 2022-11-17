@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Square Project</string>
+    <string name="main_screen_welcome_label">Employee Directory</string>
+    <string name="main_screen_updated_label">Updated on</string>
 </resources>

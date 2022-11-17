@@ -13,7 +13,22 @@ class EmployeeRepositoryImpl @Inject constructor(
     override suspend fun getEmployeeData(): Resource<EmployeesData> {
 
         return try {
-            Resource.Success(data = api.getEmployeesData().toEmployeesInfo())
+//            when ((1..3).random()) {
+            when (1) {
+
+                1 -> {
+                    Resource.Success(data = api.getEmployeesData().toEmployeesInfo())
+                }
+                2 -> {
+                    Resource.Success(data = api.getEmployeesDataMalformed().toEmployeesInfo())
+                }
+                3 -> {
+                    Resource.Success(data = api.getEmployeesDataEmpty().toEmployeesInfo())
+                }
+                else -> {
+                    Resource.Error("An unknown error occurred.")
+                }
+            }
         } catch (e: java.lang.Exception) {
             e.printStackTrace()
 
